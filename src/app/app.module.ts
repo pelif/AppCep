@@ -10,10 +10,12 @@ import { CepService } from './cep.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CepComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpModule
   ],

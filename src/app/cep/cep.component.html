@@ -1,3 +1,33 @@
-<p>
-  cep works!
-</p>
+<div class="row col-md-12 py-3 px-md-5">
+<form>
+  <div class="form-group">
+    <label for="cep">Cep</label>
+    <input type="text" class="form-control" id="cep" [(ngModel)]="Cep.cep" placeholder="Entre com um cep"><br>
+    <button class="btn btn-primary col-md-12" type="button" (click)="buscar()">Buscar</button>
+  </div>
+  <div class="form-group">
+    <label for="logradouro">Logradouro</label>
+    <input type="text" class="form-control" id="logradouro" [(ngModel)]="Cep.logradouro">
+  </div>
+  <div class="form-group">
+    <label for="numero">numero</label>
+    <input type="text" class="form-control" id="numero" [(ngModel)]="Cep.numero">
+  </div>
+  <div class="form-group">
+    <label for="complemento">Complemento</label>
+    <input type="text" class="form-control" id="complemento" [(ngModel)]="Cep.complemento">
+  </div>
+  <div class="form-group">
+    <label for="cidade">Cidade</label>
+    <input type="text" class="form-control" id="cidade" [(ngModel)]="Cep.cidade">
+  </div>
+  <div class="form-group">
+    <label for="bairro">Bairro</label>
+    <input type="text" class="form-control" id="bairro" [(ngModel)]="Cep.bairro">
+  </div>
+  <div class="form-group">
+    <label for="estado">UF</label>
+    <input type="text" class="form-control" id="uf" [(ngModel)]="Cep.uf">
+  </div>
+</form>
+</div>
